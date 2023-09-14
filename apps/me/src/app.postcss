@@ -1,0 +1,22 @@
+/* Write your global styles here, in PostCSS syntax */
+@import 'open-props/postcss/normalize';
+
+html {
+	--size-layout: calc(var(--size-15) + var(--size-15));
+}
+
+@font-face {
+	font-family: 'Jura';
+	src: url('/fonts/Jura-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
+:root {
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	}
+}
